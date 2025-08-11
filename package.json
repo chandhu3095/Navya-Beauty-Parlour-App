@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0",
+    "@vitejs/plugin-react-swc": "^3.10.2"
+  },
+  "dependencies": {
+    "lovable-tagger": "^1.1.8",
+    "tailwindcss": "^4.1.10"
+  }
+}

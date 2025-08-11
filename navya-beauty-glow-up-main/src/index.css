@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 🎨 Design Tokens */
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 51 51 51;
+
+    --card: 255 255 255;
+    --card-foreground: 51 51 51;
+
+    --popover: 255 255 255;
+    --popover-foreground: 51 51 51;
+
+    --primary: 139 69 19;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 245 245 220;
+    --secondary-foreground: 51 51 51;
+
+    --muted: 248 248 248;
+    --muted-foreground: 107 114 128;
+
+    --accent: 218 165 32;
+    --accent-foreground: 255 255 255;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 139 69 19;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: rgb(var(--background));
+    color: rgb(var(--foreground));
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+
+
+/* 🛠 Utility Classes */
+@layer utilities {
+  .font-heading {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .gradient-brown {
+    background: linear-gradient(135deg, #8b4513 0%, #0e0d0d 100%);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #8b4513 0%, #101010 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(1, 12, 161, 0.887);
+  }
+
+  .glass-effect {
+    background: rgba(189, 17, 189, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 69, 19, 0.1);
+  }
+
+  .naturals-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f9f9f9 100%);
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .naturals-button {
+    background: linear-gradient(135deg, #040404 0%, #e24617 100%);
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .naturals-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
+  }
+}
