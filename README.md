@@ -78,6 +78,3 @@ npm run build && npx cap sync android && cd android && gradlew.bat assembleDebug
 
 ---
 
-If you paste this into your **README.md** file and push to GitHub, your **Project Structure** will appear exactly as a **vertical tree** instead of a paragraph.  
-
-Do you want me to also **push this README directly to your GitHub repo** so it’s live?
